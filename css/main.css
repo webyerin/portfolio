@@ -1,6 +1,15 @@
 @charset "utf-8";
 
-* {margin: 0; padding: 0;}
+@font-face {
+    font-family: 'Recipekorea';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/Recipekorea.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@import url('https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css');
+
+* {margin: 0; padding: 0; font-family: 'NanumSquare';}
 li {list-style: none;}
 a {
     text-decoration: none;
@@ -19,7 +28,6 @@ header {
 }
 header div {
     width: 1280px;
-    height: 100%;
     position: relative;
     margin: 0 auto;
     display: flex;
@@ -29,14 +37,22 @@ header div h1 a {
     position: absolute;
     left: 0;
     top: 50%;
-    transform: translateY(-50%);
+    font-family: 'Recipekorea';
+}
+header .p {
+    justify-content: right;
+}
+header .p p {
+    margin: 0 20px;
+    font-weight: bold;
+    font-family: 'Recipekorea';
 }
 
 /* main_visual 메인비주얼 */
 .main_visual {
     width: 100%;
     height: 800px;
-    background: url('../images/visual1-3.jpg') center center / cover no-repeat;
+    background: url('../images/moon-g02aee82f2_1920.jpg') center center / cover no-repeat;
     background-attachment: fixed;
     color: #fff;
     display: flex;
@@ -48,11 +64,14 @@ header div h1 a {
 }
 .main_visual div h2 {
     font-size: 80px;
+    font-family: 'Recipekorea';
 }
 .main_visual div p {
     font-size: 40px;
+    font-weight: bold;
     margin-top: 30px;
     color: rgba(255, 255, 255, 0.7);
+    font-family: 'Recipekorea';
 }
 
 /* best portfolio */
@@ -61,12 +80,20 @@ header div h1 a {
 }
 .best h3 {
     font-size: 45px;
-    text-align: right;
+    text-align: center;
     width: 1280px;
     margin: 0 auto;
+    padding-bottom: 40px;
+    font-family: 'Recipekorea';
+}
+.best h2 {
+    font-size: 45px;
+    text-align: center;
+    width: 1280px;
+    margin: -40px auto;
+    font-family: 'Recipekorea';
 }
 .best .bg {
-    background-color: #eee;
     padding: 100px 0;
 }
 .best .bg .best_box {
@@ -78,6 +105,11 @@ header div h1 a {
     display: flex;
     justify-content: space-between;
     margin-bottom: 100px;
+}
+.best .best_img {
+    /* background-color: rgba(90, 18, 100, 0.1); */
+    padding-top: 150px;
+    padding-bottom: 10px;
 }
 .best .best_box .info {
     width: 40%;
@@ -109,17 +141,21 @@ header div h1 a {
 .best .best_box .info ul li {
     height: 45px;
     line-height: 45px;
-    border: 1px solid #333;
     margin-right: 10px;
+    border-radius: 30px;
 }
 .best .best_box .info ul li a {
     padding: 0 25px;
 }
 .best .best_box .info ul li:first-of-type {
-    background-color: #333;
+    background: rgb(23,11,49);
+    background: linear-gradient(180deg, rgba(23,11,49,1) 0%, rgba(91,18,100,1) 0%, rgba(222,84,82,1) 100%);
 }
 .best .best_box .info ul li:first-of-type a {
     color: #fff;
+}
+.best .best_box .info ul li:nth-of-type(2) {
+    border: 1px solid rgba(91,18,100,1);
 }
 
 /* 영상 이미지 */
@@ -141,8 +177,31 @@ header div h1 a {
 .best .best_box .web_design {
     width: 55%;
 }
-.best .best_box .web_design figure img {
+.best .best_box .web_design div {
     width: 100%;
+    padding-bottom: 56.25%;
+    position: relative;
+}
+.best .best_box .web_design div iframe {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.best .best_img {
+    margin: 150px 0;
+}
+.best .best_img .img_box {
+    display: flex;
+    padding: 100px 0;
+}
+.best .best_img .img_box figure {
+    width: 60%;
+}
+.best .best_img .img_box figure img {
+    width: 350px;
+    height: 400px;
 }
 
 /* 카테고리별 유튜브 적용 */
@@ -226,11 +285,12 @@ h3 {
     font-size: 45px;
     text-align: center;
     margin-bottom: 40px;
+    font-family: 'Recipekorea';
 }
 
 /* 2D 디자인 */
 .g_design {
-    background-color: #eee;
+    /* background-color: rgba(222,84,82,0.15); */
     padding: 150px 0;
 }
 .g_design em {
@@ -278,7 +338,7 @@ h3 {
 
 /* 푸터 footer */
 footer {
-    background-color: #333;
+    background-color: #34303b;
     color: #fff;
     padding: 100px 0;
     text-align: center;
