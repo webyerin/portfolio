@@ -202,6 +202,7 @@ header .p p {
 .best .best_img .img_box figure img {
     width: 350px;
     height: 400px;
+    object-fit: cover;
 }
 
 /* 카테고리별 유튜브 적용 */
