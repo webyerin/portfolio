@@ -74,6 +74,54 @@ header .p p {
     font-family: 'Recipekorea';
 }
 
+/* 개인정보 .about */
+.about {
+    margin: 150px 0;
+}
+.about .about_box {
+    width: 1280px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.about .about_box figure {
+    width: 30%;
+    height: 500px;
+}
+.about .about_box figure img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.about .about_box .about_info {
+    width: 60%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.about .about_box .about_info > div {
+    width: 45%;
+    margin: 20px 0;
+    line-height: 1.5;
+}
+.about h4 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+.about p {
+    /* margin-bottom: 5px; */
+    font-size: 20px;
+}
+.about dl {
+    font-size: 20px;
+}
+.about dl dt {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
 /* best portfolio */
 .best {
     margin: 150px 0;
